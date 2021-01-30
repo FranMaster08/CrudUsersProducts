@@ -17,13 +17,13 @@ let deleteItem = (item) => {
     }
     //0
     if (indiceBuscado == -1) {
-        console.log('No se encontro ningun elemento')
+        return false;
     } else {
         dbusers[indiceBuscado]=null
-        console.log('Se borro con exito este elemento')
+        return true;
     }
 
-
+    
 
 }
 
@@ -48,3 +48,11 @@ let ClearArray = () => {
        dbusers.pop()        
     }
 }
+
+let getAll=()=>{
+    return dbusers;
+}
+
+
+
+module.exports={addItem,deleteItem,UpdateItem,ClearArray,getAll}

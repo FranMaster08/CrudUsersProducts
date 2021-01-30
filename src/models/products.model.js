@@ -47,3 +47,5 @@ let ClearArray = () => {
        dbProducts.pop()        
     }
 }
+
+module.exports={addItem,deleteItem,UpdateItem,ClearArray,getAll}
